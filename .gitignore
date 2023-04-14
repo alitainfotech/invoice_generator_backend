@@ -1,0 +1,8 @@
+node_modules/
+public/
+env/
+# To untrack local changes
+# git update-index --assume-unchanged config/config.json
+
+# To reverse it (if you ever want to commit changes to it), use:
+# git update-index --no-assume-unchanged
