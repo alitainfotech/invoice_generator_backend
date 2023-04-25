@@ -1,12 +1,12 @@
 const express = require("express");
 const {
-    createInvoice,
-    updateInvoice,
-    deleteInvoice,
-    getInvoice,
-    getInvoicesByUser,
-    sendPDF,
-} = require("../controllers/invoicesController");
+  createInvoice,
+  updateInvoice,
+  deleteInvoice,
+  getInvoice,
+  getInvoicesByUser,
+  sendPDF,
+} = require("../controllers/invoices.controller");
 
 const { uploadPDF } = require("../helpers/index");
 

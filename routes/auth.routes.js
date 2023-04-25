@@ -6,7 +6,7 @@ const {
   resetPassword,
   getProfile,
   editProfile,
-} = require("../controllers/usersController");
+} = require("../controllers/auth.controller");
 const router = express.Router();
 
 router.post("/login", signin);

@@ -10,10 +10,10 @@ require("./models");
 // const baseMiddleware = require("./middlewares/baseMiddleware");
 
 // myapi
-const adminRoutes = require("./routes/adminRoute");
-const userRoutes = require("./routes/usersRoute");
-const clientRoutes = require("./routes/clientsRoute");
-const invoiceRoutes = require("./routes/invoicesRoute");
+const adminRoutes = require("./routes/admin.routes");
+const userRoutes = require("./routes/auth.routes");
+const clientRoutes = require("./routes/clients.routes");
+const invoiceRoutes = require("./routes/invoices.routes");
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
@@ -37,10 +37,10 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to Invoice." });
 });
 
-app.use('/admin', adminRoutes);
-app.use('/users', userRoutes);
-app.use('/clients', clientRoutes);
-app.use('/invoices', invoiceRoutes)
+app.use("/admin", adminRoutes);
+app.use("/users", userRoutes);
+app.use("/clients", clientRoutes);
+app.use("/invoices", invoiceRoutes);
 // app.use('/profiles', profile)
 
 // require("./routes/router")(app);
